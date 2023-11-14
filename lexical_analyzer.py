@@ -66,7 +66,7 @@ def tokenize_source_code(file_name):
 
     return tokens
 
-tokens = tokenize_source_code("/workspaces/pa3-lexical-analysis-vrohan10/source_code.cminus")
+tokens = tokenize_source_code("/workspaces/Lexical-Analyzer/source_code.cminus")
 templist = []
 # Print the identified tokens
 for token_type, token_value in tokens:
