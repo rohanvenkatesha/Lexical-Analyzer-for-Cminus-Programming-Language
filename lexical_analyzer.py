@@ -52,26 +52,10 @@ def tokenize_source_code(file_name):
                         else:
                             print("Lexical error: Unclosed comment. ", expression)
                             return tokens
-                if token_type == "IDENTIFIER":
-                    # Capture the identifier and then check the surrounding characters
-                    identifier = match.group(0)
-                    prev_char = source_text[:source_text.find(identifier)]
-                    next_char = source_text[len(identifier):len(identifier) + 1]
-                    # if prev_char in ["KEYWORD", "ARITH_OP", "LOGIC_OP", "SEPARATOR"]:
-                    #     print(f"Lexical error: Missing separator, keyword, or operator before identifier: {identifier}")
-                    #     return tokens
-                    if next_char not in ["ARITH_OP", "LOGIC_OP", "SEPARATOR", ";"]:
-                        print(f"Lexical error: Missing separator, operator, or semicolon after identifier: {identifier}")
-                        return tokens
-                    tokens.append((token_type, identifier))
-                else:
-                    tokens.append((token_type, token_value))
 
+                tokens.append((token_type, token_value))
                 source_text = source_text[len(token_value):]
                 break
-                # tokens.append((token_type, token_value))
-                # source_text = source_text[len(token_value):]
-                # break
         if not match:
             # Handle unrecognized characters
             if source_text[0].isspace():
@@ -82,7 +66,7 @@ def tokenize_source_code(file_name):
 
     return tokens
 
-tokens = tokenize_source_code(r"W:\WMU Assignments\Program for Grad\Assignment 3\source_code.cminus")
+tokens = tokenize_source_code("/workspaces/pa3-lexical-analysis-vrohan10/source_code.cminus")
 templist = []
 # Print the identified tokens
 for token_type, token_value in tokens:
