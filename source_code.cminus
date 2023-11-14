@@ -1,0 +1,10 @@
+  int main() {
+       int x, y ; /* wrong declaration"*/
+       read(x); read(y);
+       while ((x != 0) || (y != 0)) {
+           write(x*y);
+           read(x); read(y); /* declaration"*/
+       }
+       exit;/*This is 
+       multiline Comment */
+    }
