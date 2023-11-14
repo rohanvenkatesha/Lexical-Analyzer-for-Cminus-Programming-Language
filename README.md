@@ -18,11 +18,3 @@ Lexical Analyzer Specification: The lexical analyzer is a program that takes an 
   • LOGIC-OP: A symbol that performs a logical operation on operands.
   • SEPARATOR: A symbol that separates tokens or groups them together.
   • COMMENT: A text that is ignored by the compiler and used for documentation purposes.
-
-The lexical analyzer should follow these steps:
-  • Read the input source code file line by line and store it in a buffer.
-  • Scan the buffer from left to right and identify the tokens based on the language specification.
-  • For each token, create a token object with the token type and the token value as attributes.
-  • Append the token object to a list of tokens.
-  • Repeat steps 2 to 4 until the end of the buffer is reached or an error is encountered.
-  • Return the list of tokens as output or display an error message if an error is encountered.
