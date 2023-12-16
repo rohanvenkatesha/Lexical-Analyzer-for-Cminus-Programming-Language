@@ -1,7 +1,8 @@
 # Lexical-Analyzer
 
-Language Specification: The self-designed language is called Cminus and it has the following features:
-	• It is a case-sensitive language that uses ASCII characters.
+Language Specification: 
+The self-designed language is called Cminus and it has the following features:
+  • It is a case-sensitive language that uses ASCII characters.
   • It supports only two data types: basic type int and a standard data type float.
   • It supports arithmetic, logical, relational, and assignment operators.
   • It supports if-else, while, and compound statements for control flow.
