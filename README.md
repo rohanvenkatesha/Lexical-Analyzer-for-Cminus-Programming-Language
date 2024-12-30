@@ -87,7 +87,6 @@ Lexical-Analyzer-for-Cminus-Programming-Language/
 ├── lexical_analyzer.py         # Main script for lexical analysis
 ├── Cminus_programming_language.pdf  # Language specification for Cminus
 ├── source_code.cminus          # Example Cminus source code file
-├── output_tokens.txt           # Tokenized output (optional)
 ├── Report.pdf                  # Report on the project
 └── README.md                   # Documentation
 ```
